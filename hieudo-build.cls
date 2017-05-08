@@ -21,6 +21,7 @@
 \pagenumbering{gobble}
 \usepackage{datetime2}
 
+
 % Color definitions
 \definecolor{date}{HTML}{000000} 
 \definecolor{primary}{HTML}{000000}
@@ -34,6 +35,8 @@
 {\color{subheadings}\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-ExtraLight}\selectfont #1 \normalfont}
 \linespread{1.1}
 
+\newcommand{\customboldtext}[1]{\color{subheadings}\fontspec[Path =fonts/NiveauGrotesk/]{Niveau-Bol}\selectfont #1 \normalfont}
+
 % Date format
 \DTMnewdatestyle{mylastupdate}{%
   \renewcommand*{\DTMdisplaydate}[4]{\DTMtwodigits{##2}.\DTMtwodigits{##3}.##1}\color{date}\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-ExtraLight}\fontsize{10pt}{10pt}\selectfont%
@@ -42,16 +45,16 @@
 
 % Name command
 \newcommand{\namesection}[2]{
-	\hspace{-1.7em}\raggedright{\parbox[b]{30em}{\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{45pt}{0cm}\selectfont #1}}
+	\hspace{-1.7em}\raggedright{\parbox[b]{25em}{\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{35pt}{0cm}\selectfont #1}}
     \hfill
-    \raggedleft{\parbox[b]{12em}{\color{headings}\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Lig}\fontsize{8pt}{14pt}\selectfont #2}}
-   	\vspace{1.5em} 
+    \raggedleft{\parbox[b]{18em}{\color{headings}\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Lig}\fontsize{14pt}{14pt}\selectfont #2}}
+   	\vspace{1em} 
 }
 \titlespacing{\section}{0pt}{0pt}{2pt}
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-ExtraLight}\fontsize{18pt}{24pt}\selectfont \raggedright\uppercase}{} {0em}{}
+\scshape\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-ExtraLight}\fontsize{20pt}{20pt}\selectfont \raggedright\uppercase}{} {0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{\color{subheadings}
