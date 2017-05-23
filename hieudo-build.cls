@@ -9,7 +9,7 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=1.5cm, vmargin=1.5cm]{geometry}
+\usepackage[hmargin=0.7cm, vmargin=0.7cm]{geometry}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
@@ -45,7 +45,7 @@
 
 % Name command
 \newcommand{\namesection}[2]{
-	\hspace{-1.7em}\raggedright{\parbox[b]{25em}{\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{35pt}{0cm}\selectfont #1}}
+	\hspace{-1.7em}\vspace{0.0em}\raggedright{\parbox[b]{25em}{\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Bol}\fontsize{35pt}{0cm}\selectfont #1}}
     \hfill
     \raggedleft{\parbox[b]{18em}{\color{headings}\fontspec[Path = fonts/NiveauGrotesk/]{Niveau-Lig}\fontsize{14pt}{14pt}\selectfont #2}}
    	\vspace{1em} 
