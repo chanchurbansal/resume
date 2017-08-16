@@ -17,16 +17,21 @@
 \usepackage[UKenglish]{babel}
 \usepackage[UKenglish]{isodate}
 \usepackage{fontspec,xltxtra,xunicode}
+\usepackage{color,soul}
 \usepackage{fontawesome}
 \pagenumbering{gobble}
 \usepackage{datetime2}
-
 
 % Color definitions
 \definecolor{date}{HTML}{000000} 
 \definecolor{primary}{HTML}{000000}
 \definecolor{headings}{HTML}{0E0E0F}
 \definecolor{subheadings}{HTML}{1A1C1E}
+
+% %Set URL Command
+% \newcommand{\uhref}[2]{\hyperref[#1]{\color{green}\setulcolor{red}\ul{#2}}}
+\newcommand{\uhref}[2]{\href{#1}{\setulcolor{blue}\ul{#2}}}
+
 
 % Set main fonts
 \defaultfontfeatures{Mapping=tex-text}
